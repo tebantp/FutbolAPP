@@ -1,0 +1,406 @@
+{
+  "info": {
+    "_postman_id": "cf2169cc-fe6e-407b-b306-0d74df8a45a2",
+    "name": "FutbolAPI",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52638193",
+    "_collection_link": "https://go.postman.co/collection/52638193-cf2169cc-fe6e-407b-b306-0d74df8a45a2?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Equipo1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Millonarios FC\",\r\n  \"ciudad\": \"Bogotá\",\r\n  \"fundacion\": \"1946-06-18\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/equipos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "equipos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Equipo2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Atlético Nacional\",\r\n  \"ciudad\": \"Medellín\",\r\n  \"fundacion\": \"1947-03-07\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/equipos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "equipos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Entrenador Gamero",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Alberto Gamero\",\r\n  \"especialidad\": \"Principal\",\r\n  \"equipo\": { \"idEquipo\": 1 }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/entrenadores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "entrenadores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Entrenador Bodmer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Jhon Bodmer\",\r\n  \"especialidad\": \"Principal\",\r\n  \"equipo\": { \"idEquipo\": 2 }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/entrenadores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "entrenadores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Jugador Silva",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"David Macalister Silva\",\r\n  \"posicion\": \"Mediocampista\",\r\n  \"dorsal\": 10,\r\n  \"fechaNac\": \"1989-05-06\",\r\n  \"nacionalidad\": \"Colombiana\",\r\n  \"equipo\": { \"idEquipo\": 1 }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/jugadores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "jugadores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Jugador Montero",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Álvaro Montero\",\r\n  \"posicion\": \"Portero\",\r\n  \"dorsal\": 1,\r\n  \"fechaNac\": \"1995-03-11\",\r\n  \"nacionalidad\": \"Colombiana\",\r\n  \"equipo\": { \"idEquipo\": 1 }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/jugadores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "jugadores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Jugador Duque",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Jefferson Duque\",\r\n  \"posicion\": \"Delantero\",\r\n  \"dorsal\": 9,\r\n  \"fechaNac\": \"1986-09-17\",\r\n  \"nacionalidad\": \"Colombiana\",\r\n  \"equipo\": { \"idEquipo\": 2 }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/jugadores",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "jugadores"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Partido 1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"fecha\": \"2024-03-10\",\r\n  \"estadio\": \"El Campín\",\r\n  \"equipoLocal\": { \"idEquipo\": 1 },\r\n  \"equipoVisita\": { \"idEquipo\": 2 },\r\n  \"golesLocal\": 3,\r\n  \"golesVisita\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/partidos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "partidos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Partido 2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"fecha\": \"2024-04-20\",\r\n  \"estadio\": \"Atanasio Girardot\",\r\n  \"equipoLocal\": { \"idEquipo\": 2 },\r\n  \"equipoVisita\": { \"idEquipo\": 1 },\r\n  \"golesLocal\": 2,\r\n  \"golesVisita\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/partidos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "partidos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Estadística Silva Partido 1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"jugador\": { \"idJugador\": 1 },\r\n  \"partido\": { \"idPartido\": 1 },\r\n  \"minutosJugados\": 90,\r\n  \"goles\": 2,\r\n  \"asistencias\": 1,\r\n  \"tarjetasAmarillas\": 0,\r\n  \"tarjetasRojas\": 0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/estadisticas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "estadisticas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Estadística Duque Partido 1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"jugador\": { \"idJugador\": 3 },\r\n  \"partido\": { \"idPartido\": 1 },\r\n  \"minutosJugados\": 85,\r\n  \"goles\": 1,\r\n  \"asistencias\": 0,\r\n  \"tarjetasAmarillas\": 1,\r\n  \"tarjetasRojas\": 0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/estadisticas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "estadisticas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Estadística Silva Partido 2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"jugador\": { \"idJugador\": 1 },\r\n  \"partido\": { \"idPartido\": 2 },\r\n  \"minutosJugados\": 90,\r\n  \"goles\": 2,\r\n  \"asistencias\": 0,\r\n  \"tarjetasAmarillas\": 0,\r\n  \"tarjetasRojas\": 0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/estadisticas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "estadisticas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Jugadores por Equipo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/jugadores/equipo/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "jugadores",
+            "equipo",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Jugadores con más de X goles",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Total Goles por Equipo",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Resultados Partidos",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
